@@ -1,1 +1,34 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+*, html, body {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background-color: #0D76BA;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.nav-item a {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 1em 1em 1em 1em;
+  margin-right: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-item a:hover {
+  border: 1.5px solid #fff;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
