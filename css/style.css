@@ -5,21 +5,30 @@
   background-color: #0D76BA;
 }
 
+body {
+  height: 100vh;
+}
+
 div.container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 0;
-  z-index: initial;
   position: fixed;
+  height: 12vh;
+  width: 100vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  z-index: initial;
 }
 
 .navbar-brand {
   color: #fff;
   font-family: 'Pacifico', cursive;
   font-size: 40px;
-  margin-right: 20vw;
-  z-index: initial;
+  z-index: 1;
 }
 
 .navbar-brand:hover {
@@ -32,17 +41,22 @@ div.container {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   padding: 1em 1em 1em 1em;
-  margin-right: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border: 2px solid #0D76BA;
-  z-index: initial;
+  z-index: 3;
 }
 
 .nav-item a:hover {
   border: 2px solid #fff;
   border-radius: 10px;
+}
+
+.nav-item a:active {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  z-index: 3;
 }
 
 #navbarSupportedContent {
@@ -57,13 +71,31 @@ ul.navbar-nav.ml-auto.align-items-end {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-top: 0vh;
+  height: 100%;
+  z-index: 1;
 }
 
 a.nav-link {
+  background: inherit;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 2;
+  z-index: 3;
+  margin-right: 0;
+  padding: 1em 1em;
+}
+
+div#navcircle {
+  height: 100%;
+  margin-left: 15vw;
+  padding: 0;
+}
+
+div#navbarSupportedContent.collapse.navbar-collapse.show {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
