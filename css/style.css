@@ -11,7 +11,8 @@ body {
 
 nav {
   background-color: #0D76BA;
-  position: absolute;
+  position: fixed;
+  margin-top: 0;
 }
 
 .navbar-toggler:active,
@@ -111,9 +112,14 @@ div.container-fluid .myrow {
 }
 
 div.container-fluid .mycols {
-  height: 372px;
+  height: 100vh;
   background-color: #27aae1;
   margin: 1em;
   border-radius: 1em;
+}
+
+div.container-fluid .col-md-3 {
+  position: relative;
+  height: 95vh;
 }
 /*# sourceMappingURL=style.css.map */
