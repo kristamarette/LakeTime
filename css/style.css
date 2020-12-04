@@ -9,20 +9,15 @@ body {
   height: 100vh;
 }
 
-div.container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 0;
-  margin-right: 3vw;
-  position: fixed;
-  height: 12vh;
-  width: 100vw;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  overflow: hidden;
-  z-index: initial;
+nav {
+  background-color: #0D76BA;
+  position: absolute;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  outline: none;
+  opacity: 1;
 }
 
 .navbar-brand {
@@ -31,7 +26,6 @@ div.container {
   font-size: 40px;
   margin-right: 10vw;
   margin-left: 5vw;
-  z-index: 1;
   width: 50%;
 }
 
@@ -51,7 +45,6 @@ div.container {
           align-items: center;
   border: 2px solid #0D76BA;
   margin-right: 1vw;
-  z-index: 3;
 }
 
 .nav-item a:hover {
@@ -71,19 +64,6 @@ div.container {
 
 #navbarSupportedContent {
   text-align: center;
-}
-
-ul.navbar-nav.ml-auto.align-items-end {
-  background: url("/img/NavCircle.svg");
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-top: 0vh;
-  height: 100%;
-  z-index: 1;
 }
 
 a.nav-link {
@@ -107,5 +87,33 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+div.container-fluid {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0;
+  margin-right: 3vw;
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  background-color: #0D76BA;
+  overflow: scroll;
+}
+
+div.container-fluid p {
+  padding: 2em;
+}
+
+div.container-fluid .myrow {
+  margin-top: 4em;
+}
+
+div.container-fluid .mycols {
+  height: 372px;
+  background-color: #27aae1;
+  margin: 1em;
+  border-radius: 1em;
 }
 /*# sourceMappingURL=style.css.map */
