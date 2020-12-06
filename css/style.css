@@ -7,12 +7,14 @@
 
 body {
   height: 100vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
   background-color: #0D76BA;
   position: fixed;
   margin-top: 0;
+  height: 12vh;
 }
 
 .navbar-toggler:active,
@@ -60,7 +62,6 @@ nav {
   border-radius: 10px;
   padding: 1em;
   width: 100%;
-  z-index: 3;
 }
 
 #navbarSupportedContent {
@@ -73,7 +74,6 @@ a.nav-link {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 3;
   margin-right: 1vw;
   padding: 1em;
 }
@@ -97,7 +97,7 @@ div.container-fluid {
   margin-top: 0;
   margin-right: 3vw;
   position: relative;
-  height: 100%;
+  height: 80vh;
   width: 100vw;
   background-color: #0D76BA;
   overflow: scroll;
@@ -107,19 +107,33 @@ div.container-fluid p {
   padding: 2em;
 }
 
-div.container-fluid .myrow {
-  margin-top: 4em;
-}
-
 div.container-fluid .mycols {
-  height: 100vh;
-  background-color: #27aae1;
-  margin: 1em;
+  height: 90vh;
+  margin: 0 1em 1em 1em;
   border-radius: 1em;
 }
 
 div.container-fluid .col-md-3 {
   position: relative;
-  height: 95vh;
+  height: 83vh;
+  margin-top: 0;
+  padding: 2vh;
+}
+
+.footer {
+  background-color: #0D76BA;
+  position: fixed;
+  margin-bottom: 0;
+  height: 8vh;
+}
+
+.col-sm-2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin-left: 5vw;
+  width: 1em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 /*# sourceMappingURL=style.css.map */

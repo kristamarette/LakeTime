@@ -8,6 +8,7 @@
 
 body {
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
   }
 
 // ------ Google Fonts -------
@@ -19,7 +20,7 @@ nav {
     background-color: #0D76BA; 
     position: fixed;
     margin-top: 0;
-    // height: 74px;
+    height: 12vh;
 }
 
 .navbar-toggler:active,
@@ -70,7 +71,6 @@ nav {
     width: 100%;
     // width: 50vw;
     // margin-right: 0px;
-    z-index: 3;
 }
 
 #navbarSupportedContent {
@@ -86,14 +86,12 @@ nav {
 //     align-items: flex-end;
 //     margin-top: 0vh;
 //     height: 100%;
-//     z-index: 1;
 // }
 
 a.nav-link {
     background: inherit;
     width: 100%;
     justify-content: space-between;
-    z-index: 3;
     margin-right: 1vw;
     padding: 1em;
 }
@@ -114,7 +112,7 @@ div.container-fluid {
     margin-top: 0;
     margin-right: 3vw;
     position: relative;
-    height: 100%;
+    height: 80vh;
     width: 100vw;
     background-color: #0D76BA;
     // display: inline-flex;
@@ -125,18 +123,36 @@ div.container-fluid {
     }
 
     .myrow {
-        margin-top: 4em;
+        // margin-top: 4em;
     }
 
     .mycols {
-        height: 100vh;
-        background-color: #27aae1;
-        margin: 1em;
+        height: 90vh;
+        // background-color: #27aae1;
+        margin: 0 1em 1em 1em;
         border-radius: 1em;
     }
 
     .col-md-3 {
        position: relative;
-        height: 95vh;
+        height: 83vh;
+        margin-top: 0;
+        padding: 2vh;
     }
+}
+
+.footer {
+    background-color: #0D76BA; 
+    position: fixed;
+    margin-bottom: 0;
+    height: 8vh;
+}
+
+.col-sm-2  {
+    // background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-left: 5vw;
+    width: 1em;
+    display: inline-flex;
 }
