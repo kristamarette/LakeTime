@@ -14,6 +14,10 @@ nav {
   position: absolute;
 }
 
+.navbar {
+  height: 10vh;
+}
+
 .navbar-toggler:active,
 .navbar-toggler:focus {
   outline: none;
@@ -110,7 +114,7 @@ div.container-fluid {
   margin-top: 0;
   margin-right: 3vw;
   position: relative;
-  height: 80vh;
+  height: 83vh;
   width: 100vw;
   background-color: #0D76BA;
   overflow: scroll;
@@ -130,8 +134,17 @@ div.container-fluid .col-md-3 {
   position: relative;
   height: 83vh;
   margin-top: 0;
-  padding: 2vh;
+  padding: 2.5vh;
   overflow: hidden;
+  z-index: -1;
+}
+
+div.container-fluid #fixedColumn1 {
+  z-index: 1;
+}
+
+div.container-fluid #fixedColumn2 {
+  z-index: 1;
 }
 
 div.container-fluid .col-md-8 {
@@ -149,10 +162,22 @@ div.container-fluid .col-md-8 {
   display: inline-flex;
 }
 
+span.carousel-control-next-icon {
+  background-color: #F0592A;
+  border-radius: 50%;
+}
+
+span.carousel-control-prev-icon {
+  background-color: #F0592A;
+  border-radius: 50%;
+}
+
 #footer {
   background-color: #00ADEF;
   position: fixed;
-  margin-bottom: 0;
+  margin-bottom: 0px;
+  padding: 0;
   height: 8vh;
+  border: 2px solid #00ADEF;
 }
 /*# sourceMappingURL=style.css.map */

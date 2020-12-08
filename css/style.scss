@@ -23,6 +23,10 @@ nav {
     // height: 12vh;
 }
 
+.navbar {
+    height: 10vh;
+}
+
 .navbar-toggler:active,
 .navbar-toggler:focus {  
     outline: none;
@@ -115,12 +119,14 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
     align-items: flex-end;
 }
 
+//-------- PAGES ---------//
+
 div.container-fluid {
     justify-content: space-between;
     margin-top: 0;
     margin-right: 3vw;
     position: relative;
-    height: 80vh;
+    height: 83vh;
     width: 100vw;
     background-color: #0D76BA;
     // display: inline-flex;
@@ -137,22 +143,28 @@ div.container-fluid {
         border-radius: 1em;
     }
 
+    // .col-md-6 {
+    //     overflow: scroll;
+    // }
+
     .col-md-3 {
         position: relative;
         height: 83vh;
         margin-top: 0;
-        padding: 2vh;
+        padding: 2.5vh;
         overflow: hidden;
+        z-index: -1;
     }
 
-    // #fixedColumn1 {
-    //     position: fixed;
+    #fixedColumn1 {
+        // position: absolute;
+        z-index: 1;
 
-    // }
-    // #fixedColumn2 {
-    //     position: fixed;
-
-    // }
+    }
+    #fixedColumn2 {
+        // position: absolute;
+        z-index: 1;
+    }
 
     .col-md-8 {
         height: 83vh;
@@ -169,9 +181,23 @@ div.container-fluid {
     display: inline-flex;
 }
 
+//----- CAROUSEL -----//"color:#F0592A;"
+span.carousel-control-next-icon {
+    background-color: #F0592A;
+    border-radius: 50%;
+}
+
+span.carousel-control-prev-icon {
+    background-color: #F0592A;
+    border-radius: 50%;
+}
+//----- FOOTER -----//
+
 #footer {
     background-color: #00ADEF; 
     position:fixed;
-    margin-bottom: 0;
+    margin-bottom: 0px;
+    padding: 0;
     height: 8vh;
+    border: 2px solid #00ADEF;
 }
