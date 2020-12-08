@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     color: #fff;
-    background-color: #0D76BA;
+    // background-color: #0D76BA;
 }
 
 body {
@@ -18,9 +18,9 @@ body {
 // -------- Navigation --------
 nav {
     background-color: #0D76BA; 
-    position: fixed;
-    margin-top: 0;
-    height: 12vh;
+    position: absolute;
+    // margin-top: 0;
+    // height: 12vh;
 }
 
 .navbar-toggler:active,
@@ -130,7 +130,7 @@ div.container-fluid {
     }
 
     .col-md-3 {
-       position: relative;
+        position: relative;
         height: 83vh;
         margin-top: 0;
         padding: 2vh;

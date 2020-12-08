@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   color: #fff;
-  background-color: #0D76BA;
 }
 
 body {
@@ -12,9 +11,7 @@ body {
 
 nav {
   background-color: #0D76BA;
-  position: fixed;
-  margin-top: 0;
-  height: 12vh;
+  position: absolute;
 }
 
 .navbar-toggler:active,
