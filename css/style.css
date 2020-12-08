@@ -24,7 +24,7 @@ nav {
   color: #fff;
   font-family: 'Pacifico', cursive;
   font-size: 40px;
-  margin-right: 10vw;
+  margin-right: 4vw;
   margin-left: 5vw;
   width: 50%;
 }
@@ -38,27 +38,40 @@ nav {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  padding: 1em;
+  border: 2px solid #0D76BA;
+  border-radius: 10px;
+  padding: 10px 0px 10px 0px;
   width: 100%;
+  margin-right: 1vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #0D76BA;
   margin-right: 1vw;
+  margin-bottom: 0px;
 }
 
 .nav-item a:hover {
   border: 2px solid #fff;
   border-radius: 10px;
-  padding: 1em;
+  padding: 10px 0px 10px 0px;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1vw;
+  margin-bottom: 0px;
 }
 
 .nav-item a:active {
   border: 2px solid #fff;
   border-radius: 10px;
-  padding: 1em;
+  padding: 10px 0px 10px 0px;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1vw;
+  margin-bottom: 0px;
 }
 
 #navbarSupportedContent {
@@ -66,13 +79,16 @@ nav {
 }
 
 a.nav-link {
-  background: inherit;
+  border: 2px solid #0D76BA;
+  border-radius: 10px;
+  padding: 10px 0px 10px 0px;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-right: 1vw;
-  padding: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1vw;
+  margin-bottom: 0px;
 }
 
 div#navcircle {
@@ -123,13 +139,6 @@ div.container-fluid .col-md-8 {
   overflow: hidden;
 }
 
-#footer {
-  background-color: #0D76BA;
-  position: fixed;
-  margin-bottom: 0;
-  height: 8vh;
-}
-
 .col-sm-2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
@@ -138,5 +147,12 @@ div.container-fluid .col-md-8 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+#footer {
+  background-color: #00ADEF;
+  position: fixed;
+  margin-bottom: 0;
+  height: 8vh;
 }
 /*# sourceMappingURL=style.css.map */
