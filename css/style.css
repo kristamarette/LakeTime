@@ -115,9 +115,15 @@ div.container-fluid .col-md-3 {
   height: 83vh;
   margin-top: 0;
   padding: 2vh;
+  overflow: hidden;
 }
 
-.footer {
+div.container-fluid .col-md-8 {
+  height: 83vh;
+  overflow: hidden;
+}
+
+#footer {
   background-color: #0D76BA;
   position: fixed;
   margin-bottom: 0;

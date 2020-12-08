@@ -134,12 +134,18 @@ div.container-fluid {
         height: 83vh;
         margin-top: 0;
         padding: 2vh;
+        overflow: hidden;
+    }
+
+    .col-md-8 {
+        height: 83vh;
+        overflow: hidden;
     }
 }
 
-.footer {
+#footer {
     background-color: #0D76BA; 
-    position: fixed;
+    position:fixed;
     margin-bottom: 0;
     height: 8vh;
 }
