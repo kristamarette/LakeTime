@@ -127,6 +127,7 @@ div.container-fluid .mycols {
 
 div.container-fluid .col-md-6 {
   overflow: scroll;
+  width: 100vw;
 }
 
 div.container-fluid .col-md-3 {
@@ -134,7 +135,7 @@ div.container-fluid .col-md-3 {
   margin-top: 0;
   padding: 2.5vh;
   overflow: hidden;
-  z-index: -1;
+  z-index: 1;
 }
 
 div.container-fluid #fixedColumn1 {
