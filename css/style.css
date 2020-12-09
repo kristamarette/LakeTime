@@ -121,19 +121,19 @@ div.container-fluid p {
 }
 
 div.container-fluid .mycols {
-  height: 90vh;
+  height: 80vh;
   margin: 0 1em 1em 1em;
 }
 
 div.container-fluid .col-md-6 {
   overflow: scroll;
-  width: 100vw;
 }
 
 div.container-fluid .col-md-3 {
   height: 83vh;
   margin-top: 0;
   padding: 2.5vh;
+  background-color: transparent;
   overflow: hidden;
   z-index: 1;
 }
@@ -151,6 +151,7 @@ div.container-fluid #fixedColumn2 {
 }
 
 div.container-fluid .col-sm-2 {
+  background-color: transparent;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   margin-left: 5vw;
@@ -195,6 +196,9 @@ span.carousel-control-prev-icon {
   }
   .card .card-body .card-title .card-text {
     display: none;
+  }
+  .col-md-6 {
+    width: 100%;
   }
 }
 
