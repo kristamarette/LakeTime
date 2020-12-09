@@ -207,18 +207,27 @@ span.carousel-control-prev-icon {
 }
 
 @media only screen and (max-width: 768px) {
-    .col-md-3 {
+    
+    div.col-sm-2 {
         display: none;
-    }
-    .col-sm-2 {
-        display: none;
-    }
-    .card .card-body .card-title .card-text {
-        display: none;
+        overflow: hidden;
+        height: 0;
     }
 
-    .col-md-6 {
+    div.col-md-6 {
         width: 100%;
+    }
+
+    div#fixedColumn1 {
+        position: relative;
+        z-index: -1;
+        overflow: scroll;
+
+    }
+    div#fixedColumn2 {
+        display: none;
+        overflow: hidden;
+        height: 0;
     }
 }
 
