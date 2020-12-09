@@ -17,15 +17,15 @@ body {
 
 // -------- Navigation --------
 nav {
-    background-color: #0D76BA; 
+    background-color: #00ADEF; 
     position: absolute;
     // margin-top: 0;
     // height: 12vh;
 }
 
-.navbar {
-    height: 10vh;
-}
+// .navbar {
+//     height: 11vh;
+// }
 
 .navbar-toggler:active,
 .navbar-toggler:focus {  
@@ -52,7 +52,7 @@ nav {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    border: 2px solid #0D76BA;
+    border: 2px solid #00ADEF;
     border-radius: 10px;
     padding: 10px 0px 10px 0px;
     width: 100%;
@@ -98,7 +98,7 @@ nav {
 // }
 
 a.nav-link {
-    border: 2px solid #0D76BA;
+    border: 2px solid #00ADEF;
     border-radius: 10px;
     padding: 10px 0px 10px 0px;
     width: 100%;
@@ -126,7 +126,7 @@ div.container-fluid {
     margin-top: 0;
     margin-right: 3vw;
     position: relative;
-    height: 83vh;
+    height: 81vh;
     width: 100vw;
     background-color: #0D76BA;
     // display: inline-flex;
@@ -140,15 +140,14 @@ div.container-fluid {
         height: 90vh;
         // background-color: #27aae1;
         margin: 0 1em 1em 1em;
-        border-radius: 1em;
+        // border-radius: 1em;
     }
 
-    // .col-md-6 {
-    //     overflow: scroll;
-    // }
+    .col-md-6 {
+        overflow: scroll;
+    }
 
     .col-md-3 {
-        position: relative;
         height: 83vh;
         margin-top: 0;
         padding: 2.5vh;
@@ -157,28 +156,42 @@ div.container-fluid {
     }
 
     #fixedColumn1 {
-        // position: absolute;
+        position: sticky;
         z-index: 1;
 
     }
     #fixedColumn2 {
-        // position: absolute;
+        position: sticky;
         z-index: 1;
+    }
+
+    .col-sm-2  {
+        // background-color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        margin-left: 5vw;
+        width: 1em;
+        display: inline-flex;
     }
 
     .col-md-8 {
         height: 83vh;
-        overflow: hidden;
+        // overflow: hidden;
+        z-index: initial;
+        max-width: 906px;
+        text-align: center;
     }
+
 }
 
-.col-sm-2  {
-    // background-color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    margin-left: 5vw;
-    width: 1em;
-    display: inline-flex;
+.card {
+    margin-top: 50vh;
+    text-align: center;
+    
+}
+
+img {
+    max-width: 300px;
 }
 
 //----- CAROUSEL -----//"color:#F0592A;"
@@ -191,6 +204,20 @@ span.carousel-control-prev-icon {
     background-color: #F0592A;
     border-radius: 50%;
 }
+
+@media only screen and (max-width: 768px) {
+    .col-md-3 {
+        display: none;
+    }
+    .col-sm-2 {
+        display: none;
+    }
+    .card .card-body .card-title .card-text {
+        display: none;
+    }
+}
+
+
 //----- FOOTER -----//
 
 #footer {
@@ -198,6 +225,6 @@ span.carousel-control-prev-icon {
     position:fixed;
     margin-bottom: 0px;
     padding: 0;
-    height: 8vh;
+    height: 9vh;
     border: 2px solid #00ADEF;
 }
