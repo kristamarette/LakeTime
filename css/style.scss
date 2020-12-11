@@ -197,6 +197,21 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
         text-align: center;
     }
 
+    .btn-sm {
+        text-decoration: none; 
+        color:#fff; 
+        background-color: #F0592A; 
+        border-radius: 10px; 
+        border: none; 
+        margin: 0; 
+        box-shadow: 0px 3px 6px rgba(0,0,0,.3);
+    }
+    
+    .btn-sm:hover {
+       text-decoration: none;
+       color: #0D76BA;
+    }
+
 }
 
 // .row {
@@ -246,20 +261,7 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
     color: #0D76BA;
 }
 
-.btn-block {
-    text-decoration: none; 
-    color:#fff; 
-    background-color: #F0592A; 
-    border-radius: 10px; 
-    border: none; 
-    margin: 0; 
-    box-shadow: 0px 3px 6px rgba(0,0,0,.3);
-}
 
-.btn-block:hover {
-   text-decoration: none;
-   color: #0D76BA;
-}
 
 #toTop {
     background-color: #F0592A; 
@@ -283,12 +285,13 @@ h2 {
 }
 
 p {
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 blockquote {
     text-align: right; 
     margin-right: 1em;
+    margin-bottom: 0;
 }
 
 h4 {
@@ -307,9 +310,16 @@ h5 {
 
 section {
     height: 81vh;
+    @include float-right;
+    @include float-left;
+    @include float-none;
 }
 
 //----- CAROUSEL ----- //
+
+.carousel {
+    max-width: 50%;
+}
 
 span.carousel-control-next-icon {
     background-color: #F0592A;
@@ -335,56 +345,48 @@ span.carousel-control-prev-icon {
     max-width: 1500px;
 }
 
-@include media-breakpoint-down(md) {
+@media (min-width: 300px) and (max-width: 991.98px) {
     
     .navbar-brand {
         font-size: 2em;
     }
 
     .nav-item a {
-        font-size: 1em;
+        font-size: .75em;
     }
 
     div.col-md-6 {
         width: 100%;
 
-        h1 {
+        h2 {
             font-size: 2em;
         }
 
         p {
-            font-size: .5rem;
+            font-size: .75em;
         }
 
         .card-title {
-            font-size: .5rem;
+            font-size: 1em;
         }
 
         h6 {
             padding-top: 0;
-            font-size: .5rem;
+            font-size: .75em;
         }
+
     }
 
     div#fixedColumn1 {
         display: none;
-        position: relative;
-        z-index: -1;
-        overflow: scroll;
+        overflow: hidden;
 
     }
 
     div#fixedColumn2 {
         display: none;
         overflow: hidden;
-        height: 0;
     }
 
-   
-
-
-}
-
-@media only screen and (min-width: 300px) {
 
 }
