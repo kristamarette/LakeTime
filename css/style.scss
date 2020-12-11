@@ -8,8 +8,11 @@
 
 body {
     height: 100vh;
+    width: 100vw;
     font-family: 'Montserrat', sans-serif;
-  }
+    background-color: #0D76BA;
+    align-items: center;
+}
 
 //   #contentWrapper {
 //     width: 100vw;
@@ -17,24 +20,25 @@ body {
 //     //   flex-direction: column;
 //     margin: 0 auto;
 //     // width: 2560px;
-//   }
+//   } //
 
 
 // ------ Google Fonts -------
 // LOGO font-family: 'Pacifico', cursive;
 // COPY font-family: 'Montserrat', sans-serif;
 
-// -------- Navigation --------
+// -------- Navigation -------- //
 nav {
     background-color: #00ADEF; 
-    position: absolute;
+    // position: absolute;
     // margin-top: 0;
-    // height: 12vh;
+    height: 11vh;
+    max-width: 1500px;
 }
 
 // .navbar {
 //     height: 11vh;
-// }
+// } //
 
 .navbar-toggler:active,
 .navbar-toggler:focus {  
@@ -54,7 +58,7 @@ nav {
 .navbar-brand:hover {
     color: #fff;
     opacity: 0.7;
-    // width: 100%;
+    width: 50%;
 }
 
 .nav-item a {
@@ -81,6 +85,7 @@ nav {
     margin-right: 1vw;
     margin-bottom: 0px;
 }
+
 .nav-item a:active {
     border: 2px solid #fff;
     border-radius: 10px;
@@ -104,7 +109,7 @@ nav {
 //     align-items: flex-end;
 //     margin-top: 0vh;
 //     height: 100%;
-// }
+// } //
 
 a.nav-link {
     border: 2px solid #00ADEF;
@@ -119,13 +124,15 @@ a.nav-link {
 
 div#navcircle {
     height: 100%;
-    margin-left: 0;
+    // margin-left: 0;
     padding: 0;
+    background-color: #00adef;
 }
 
 div#navbarSupportedContent.collapse.navbar-collapse.show {
     // margin-right: 0;
     align-items: flex-end;
+
 }
 
 .collapsing {
@@ -134,16 +141,17 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
 
 //-------- PAGES ---------//
 
-div.container-fluid {
-    justify-content: space-between;
-    margin-top: 0;
-    margin-right: 3vw;
+#bodyContent {
+    // justify-content: space-between;
+    // padding-top: calc(100% - 11%);
     position: relative;
     height: 81vh;
-    width: 100vw;
+    // display: flex;
+//    width: 100vw; 
     background-color: #0D76BA;
     // display: inline-flex;
     overflow: scroll;
+    margin-top: 11vh;
 
     p { 
         padding: 2em;
@@ -152,7 +160,7 @@ div.container-fluid {
     .mycols {
         height: 80vh;
         // background-color: #27aae1;
-        margin: 0 1em 1em 1em;
+        margin: 1em 1em 1em 1em;
         // border-radius: 1em;
         background-color: inherit;
 
@@ -163,7 +171,7 @@ div.container-fluid {
     }
 
     .col-md-3 {
-        height: 83vh;
+        height: 80vh;
         margin-top: 0;
         padding: 2.5vh;
         background-color: transparent;
@@ -181,17 +189,8 @@ div.container-fluid {
         z-index: 1;
     }
 
-    .col-sm-2  {
-        background-color: transparent;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
-        margin-left: 5vw;
-        width: 1em;
-        display: inline-flex;
-    }
-
     .col-md-8 {
-        height: 83vh;
+        height: 80vh;
         // overflow: hidden;
         z-index: initial;
         max-width: 906px;
@@ -200,20 +199,25 @@ div.container-fluid {
 
 }
 
-//----- INFO CARD -----
+// .row {
+//     margin-top: 11vh;
+// }
+//----- INFO CARD ----- //
 .card {
     margin-top: 50vh;
     text-align: center;
     max-width: 725px; 
     background-color: rgba(255, 255, 255, .8); 
-    margin: auto; height: 200px; 
+    margin: auto;
     align-items: center; 
 }
 
 .card-body {
     text-align: center;
 }
+
 .card-title {
+    padding-top: 0;
     color:#545554;
 }
 
@@ -221,10 +225,11 @@ div.container-fluid {
     color: #545554;
     padding-top: 0; 
     margin-bottom: 0;
-    overflow: scroll;
+    max-width: 725px;
+    overflow: hidden;
 }
 
-//--- BUTTONS ---
+//--- BUTTONS ----//
 
 .btn-lg {
     text-decoration: none; 
@@ -251,7 +256,7 @@ div.container-fluid {
     box-shadow: 0px 3px 6px rgba(0,0,0,.3);
 }
 
-button.btn-block:hover {
+.btn-block:hover {
    text-decoration: none;
    color: #0D76BA;
 }
@@ -300,7 +305,12 @@ h5 {
     width: 40vw;
 }
 
-//----- CAROUSEL -----//"color:#F0592A;"
+section {
+    height: 81vh;
+}
+
+//----- CAROUSEL ----- //
+
 span.carousel-control-next-icon {
     background-color: #F0592A;
     border-radius: 50%;
@@ -311,27 +321,48 @@ span.carousel-control-prev-icon {
     border-radius: 50%;
 }
 
-@media only screen and (max-width: 768px) {
+//----- FOOTER -----//
+
+#footer {
+    background-color: #00ADEF; 
+    position: relative;
+    margin-bottom: 0px;
+    padding: 0;
+    height: 10vh;
+    border: 2px solid #00ADEF;
+    display: flex;
+    justify-items: center;
+    max-width: 1500px;
+}
+
+@include media-breakpoint-down(md) {
     
     .navbar-brand {
-    font-size: 32px;
+        font-size: 2em;
     }
 
     .nav-item a {
-        font-size: 16px;
-    }
-
-    div.col-sm-2 {
-        display: none;
-        overflow: hidden;
-        height: 0;
+        font-size: 1em;
     }
 
     div.col-md-6 {
         width: 100%;
 
+        h1 {
+            font-size: 2em;
+        }
+
         p {
-            font-size: 14px;
+            font-size: .5rem;
+        }
+
+        .card-title {
+            font-size: .5rem;
+        }
+
+        h6 {
+            padding-top: 0;
+            font-size: .5rem;
         }
     }
 
@@ -342,21 +373,18 @@ span.carousel-control-prev-icon {
         overflow: scroll;
 
     }
+
     div#fixedColumn2 {
         display: none;
         overflow: hidden;
         height: 0;
     }
+
+   
+
+
 }
 
+@media only screen and (min-width: 300px) {
 
-//----- FOOTER -----//
-
-#footer {
-    background-color: #00ADEF; 
-    position:fixed;
-    margin-bottom: 0px;
-    padding: 0;
-    height: 9vh;
-    border: 2px solid #00ADEF;
 }
