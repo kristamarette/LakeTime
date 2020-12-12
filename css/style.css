@@ -117,7 +117,7 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
 
 #bodyContent {
   position: relative;
-  height: 81vh;
+  height: 80vh;
   background-color: #0D76BA;
   overflow: scroll;
   margin-top: 11vh;
@@ -128,7 +128,7 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
 }
 
 #bodyContent .mycols {
-  height: 80vh;
+  height: 81vh;
   margin: 1em 1em 1em 1em;
   background-color: inherit;
 }
@@ -142,8 +142,6 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
   margin-top: 0;
   padding: 2.5vh;
   background-color: transparent;
-  overflow: hidden;
-  z-index: 1;
 }
 
 #bodyContent #fixedColumn1 {
@@ -159,10 +157,33 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
 }
 
 #bodyContent .col-md-8 {
-  height: 80vh;
   z-index: initial;
   max-width: 906px;
   text-align: center;
+  margin-top: calc(100vh - 11vh);
+}
+
+#bodyContent .btn-sm {
+  text-decoration: none;
+  color: #fff;
+  background-color: #F0592A;
+  border-radius: 10px;
+  border: none;
+  margin: 0;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+#bodyContent .btn-sm:hover {
+  text-decoration: none;
+  color: #0D76BA;
+}
+
+#bodyContent h5 {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 40%;
 }
 
 .card {
@@ -209,22 +230,6 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
   color: #0D76BA;
 }
 
-.btn-block {
-  text-decoration: none;
-  color: #fff;
-  background-color: #F0592A;
-  border-radius: 10px;
-  border: none;
-  margin: 0;
-  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-}
-
-.btn-block:hover {
-  text-decoration: none;
-  color: #0D76BA;
-}
-
 #toTop {
   background-color: #F0592A;
   border: none;
@@ -238,40 +243,8 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
   color: #0D76BA;
 }
 
-#welcome {
-  margin-top: 1em;
-}
-
-h2 {
-  text-align: center;
-  padding-top: 2em;
-}
-
-p {
-  font-size: 18px;
-}
-
-blockquote {
-  text-align: right;
-  margin-right: 1em;
-}
-
-h4 {
-  text-align: right;
-  font-family: 'Pacifico', cursive;
-  margin-right: 1em;
-}
-
-h5 {
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin: auto;
-  width: 40vw;
-}
-
-section {
-  height: 81vh;
+.carousel {
+  max-width: 50%;
 }
 
 span.carousel-control-next-icon {
@@ -289,7 +262,7 @@ span.carousel-control-prev-icon {
   position: relative;
   margin-bottom: 0px;
   padding: 0;
-  height: 10vh;
+  height: 9vh;
   border: 2px solid #00ADEF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,39 +271,28 @@ span.carousel-control-prev-icon {
   max-width: 1500px;
 }
 
-@media only screen and (max-width: 425px) {
+@media (max-width: 991.98px) {
   .navbar-brand {
     font-size: 2em;
   }
   .nav-item a {
-    font-size: 1em;
+    font-size: .75em;
   }
   div.col-md-6 {
     width: 100%;
   }
-  div.col-md-6 h1 {
+  div.col-md-6 h2 {
     font-size: 2em;
   }
   div.col-md-6 p {
-    font-size: .5rem;
+    font-size: .75em;
   }
   div.col-md-6 .card-title {
-    font-size: .5rem;
+    font-size: 1em;
   }
   div.col-md-6 h6 {
     padding-top: 0;
-    font-size: .5rem;
-  }
-  div#fixedColumn1 {
-    display: none;
-    position: relative;
-    z-index: -1;
-    overflow: scroll;
-  }
-  div#fixedColumn2 {
-    display: none;
-    overflow: hidden;
-    height: 0;
+    font-size: .75em;
   }
 }
 /*# sourceMappingURL=style.css.map */

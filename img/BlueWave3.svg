@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+	 viewBox="0 0 1502.1 1447.2" style="enable-background:new 0 0 1502.1 1447.2;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#00ADEF;}
+	.st1{fill:#0D76BA;}
 </style>
-<path id="Path_208" class="st0" d="M901,38.1C457.3,188.4,483.7-74.9,0.8,22c-1.5,374.1,0,525.7,0,525.7H901V38.1z"/>
-<path id="Path_207" class="st0" d="M0.2,727.9c443.7-150.3,417.3,112.9,900.2,16c1.5-374.1,0-525.7,0-525.7H0.2V727.9z"/>
+<g>
+	<path id="Path_208" class="st0" d="M1501.1,40.7C750.6,194.3,750.6-94.5,0,39.1c0,509.4-0.3,628.1,0.8,683.1
+		c728.4-130.8,749.8,146.7,1500.4,9.2C1501.3,686.5,1501.1,40.7,1501.1,40.7z"/>
+	<path id="Path_208_1_" class="st1" d="M1502,723.8C751.5,877.4,751.5,588.5,0.8,722.1c0,509.4-0.3,628.1,0.8,683.1
+		c749.5-191,749.8,143.6,1500.4,9.2C1502.1,1369.6,1502,723.8,1502,723.8z"/>
+</g>
 </svg>
