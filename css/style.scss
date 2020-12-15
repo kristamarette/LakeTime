@@ -35,6 +35,7 @@ nav {
     background-color: #00ADEF;
     // position: absolute;
     // margin-top: 0;
+    padding-top: 0px;
     height: 11vh;
     max-width: 1500px;
 }
@@ -101,6 +102,7 @@ nav {
 
 #navbarSupportedContent {
     text-align: center;
+    
 
 }
 
@@ -123,23 +125,44 @@ a.nav-link {
     align-items: center;
     margin-right: 1vw;
     margin-bottom: 0px;
+  
 }
 
 div#navcircle {
     height: 100%;
-    // margin-left: 0;
+    margin-top: 0;
     padding: 0;
-    background-color: #00adef;
+    // background-color: #00adef;
+    background-color: red;
+    clip-path: circle(10% at 88% 10%);
+    
 }
 
-div#navbarSupportedContent.collapse.navbar-collapse.show {
+ul.navbar-nav.ml-auto.align-items-end {
+    // background: url('/img/NavCircle.svg');
+    // background-size: cover;
+    // background-position: right;
+    // background-repeat: no-repeat;
+    // align-items: flex-end;
+    margin-top: 0;
+    height: 30vh;
+    padding: 24px 0px;
+    // height: 100vh;
+    // background-color: red;
+} 
+
+.navbar-collapse .show {
     // margin-right: 0;
     align-items: flex-end;
+    background-color: red;
+    height: 12vh;
+    z-index: 10;
+    // clip-path: circle(100% at 70% 10%);
 
 }
 
 .collapsing {
-    transition: none;
+    transition: all .5s ease-in-out;
 }
 
 
@@ -183,7 +206,7 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
     margin-top: 0;
     padding: 2.5vh;
     background-color: transparent;
-    // overflow: hidden;
+    overflow: hidden;
 
 }
 
@@ -193,10 +216,10 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
 
 }
 
-#fixedColumn2 {
-    position: sticky;
-    z-index: 1;
-}
+// #fixedColumn2 {
+//     position: sticky;
+//     z-index: 1;
+// }
 
 .col-md-8 {
     // height: 81vh;
@@ -204,7 +227,7 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
     z-index: initial;
     max-width: 906px;
     text-align: center;
-    margin-top: calc(100vh - 11vh);
+    margin-top: 11vh;
 }
 
 
@@ -232,13 +255,13 @@ div#navbarSupportedContent.collapse.navbar-collapse.show {
     color: #545554;
 }
 
-.card-text {
-    color: #545554;
-    padding-top: 0;
-    margin-bottom: 0;
-    max-width: 725px;
-    overflow: hidden;
-}
+// .card-text {
+//     color: #545554;
+//     padding-top: 0;
+//     margin-bottom: 0;
+//     max-width: 725px;
+//     overflow: hidden;
+// }
 
 //----- BUTTONS ------//
 
@@ -360,8 +383,8 @@ span.carousel-control-prev-icon {
         font-size: 2em;
     }
 
-    .nav-item a {
-        font-size: .75em;
+    a.nav-link {
+        font-size: 2em;
     }
 
     div.col-md-6 {
@@ -391,8 +414,8 @@ span.carousel-control-prev-icon {
     
     }
     
-    #fixedColumn2 {
-        display: none;
-    }
+    // #fixedColumn2 {
+    //     display: none;
+    // }
 
 }
