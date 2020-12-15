@@ -18,6 +18,9 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
   <link rel="stylesheet" href="/css/hamburger.css" />
   <link rel="stylesheet" href="/css/style.css" />
+
+  <!--  FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/cf650dccb0.js" crossorigin="anonymous"></script>
 </head>
 
 <!-- BODY -->
@@ -28,7 +31,7 @@
 
     <!-- Navigation -->
 
-    <nav class="navbar navbar-expand-lg container-fluid fixed-top">
+    <nav class="navbar navbar-expand-lg container-fluid fixed-top" >
       <a class="navbar-brand align-items-center" href="#home">Jeanna Dwyer</a>
       <button class="navbar-toggler hamburger hamburger--elastic" type="button" data-toggle="collapse"
         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -42,10 +45,10 @@
         <div id="navcircle">
           <ul class="navbar-nav ml-auto align-items-end">
             <li class="nav-item">
-              <a class="nav-link" href="#welcome">&nbsp; Home &nbsp;<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#welcome"> Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#book">&nbsp; Book &nbsp;</a>
+              <a class="nav-link" href="#book"> Book </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#author">Author</a>
@@ -81,11 +84,11 @@
 
       </div>
 
-      <!--  WELCOME PAGE -->
+      <!--  BOOK SALES COLUMN -->
 
       <div id="welcome" class="row">
         <div id="fixedColumn1" class="col-md-3 sticky-top d-xs-none d-sm-none d-md-none d-lg-block d-xl-block">
-          <section class="mycols" style="padding-top: 1em;">
+          <section class="mycols" style="margin-top: 0;">
             <h2>A Penguin in the Closet</h2>
             <p style="margin-top: 0; padding: 16px 0 0 0;">There is a penguin in the closet and a walrus on the stairs!
               A boy comes home and finds misplaced animals everywhere! Can he make them disappear before his mother
@@ -109,16 +112,16 @@
             <br>
             <blockquote style="text-align: right; margin-right: 1em;">Warmly,</blockquote>
             <h4 style="text-align: right; margin-right: 1em; font-family: 'Pacifico', cursive;">Jeanna Dwyer</h4>
-            <h3 style="padding: 1em 0; align-items: center;"><img src="/img/WaveLine.svg" alt="" width="100%" /></h3>
+            <!-- <h3 style="padding: 1em 0; align-items: center;"><img src="/img/WaveLine.svg" alt="" width="100%" /></h3> -->
           </section>
           <br>
 
           <!--  BOOK PAGE -->
 
           <section id="book" class="mycols"
-            style="background-image: url('/img/BlueWave3.svg'); background-repeat: no-repeat; background-size: cover; max-height: 881px; width: auto;">
+            style="max-height: 881px; width: auto;">
             <h2 style="padding-top: 2em; text-align: center; width: 100%;">About the Book</h2>
-            <div class="d-flex float-left !important" style="margin: 0; width: 60%;">
+            <div class="d-flex float-left" style="margin: 0; width: 60%;">
               <p style="padding: 1em 1em 0 1em;">A boy comes home from school and finds his house
                 is a big mess! Along with the toys, books, and clothes he left out, there are silly animals everywhere
                 like a penguin in the closet and a walrus on the stairs! He knows his mother
@@ -127,7 +130,7 @@
                 mother comes home?</p>
             </div>
               <br>
-            <div id="carouselExampleIndicators" class="carousel slide float-right !important" data-ride="carousel" style="margin: 0; align-items: center; width: 40%;">
+            <div id="carouselExampleIndicators" class="carousel slide float-right" data-ride="carousel" style="margin: 0; align-items: center; width: 40%;">
                 <!-- <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -176,17 +179,20 @@
           <!--  CONTACT PAGE -->
 
           <section id="contact" class="mycols"
-            style="max-height: 881px; margin-bottom: 0; background-image: url('/img/BlueWave3.svg'); background-repeat: no-repeat; background-size: cover;">
+            style="max-height: 881px; margin-bottom: 0;">
             <h2 style="padding-top: 2em; text-align: center; width: 100%;">Contact Me</h2>
             <!-- <img src="/img/LTHS_Square.jpg" height="300" width="300" style="display: block; margin: auto; border-radius: 50%;"/> -->
             <img class="rounded-circle" src="/img/JDhs2_square.jpg" height="300" width="300"
               style="display: block; margin: auto; padding-top: 1em;" />
-            <p style="margin: 0 auto; text-align: center;">Owner of LakeTime Publishing &amp; Author, Jeanna Dwyer</p>
+            <p style="margin: 32px 32px 0 32px; text-align: center;">Owner of LakeTime Publishing</p>
+            <p style="margin: 0 auto; text-align: center;">&amp; Author, Jeanna Dwyer</p>
+            <p style="padding: 32px 32px 0 0; font-size: 1em; margin: 0 auto;text-align: center;">For bulk purchases or personally signed books,</p>
+            <p style="padding: 0 32px 0 32px; font-size: 1em; margin: 0 auto;text-align: center;">please contact me directly at&#58;</p>
             <div class="card"
               style="max-width: 30em; background-color: rgba(255, 255, 255, .8); margin: auto; height: 5em; align-items: center; text-align: center;">
               <div class="card-body">
-                <p class="card-text" style="padding: 0 32px 0 32px;">jeanna.dwyer@laketimepublishing.com</p>
-                <h6 class="card-title">Email</h6>
+                <p class="card-text" style="padding: 0 32px 0 32px; font-size: 1em;">jeanna.dwyer@laketimepublishing.com</p>
+                <p class="card-text" style="padding: 0 32px 0 32px; font-size: 1em; text-align: left;">Email</p>
               </div>
             </div>
           </section>
@@ -195,8 +201,8 @@
         <!--  AUTHOR COLUMN  -->
 
         <div id="fixedColumn1" class="col-md-3 sticky-top  d-xs-none d-sm-none d-md-none d-lg-block d-xl-block">
-          <section class="mycols" style="padding-top: 1em;">
-            <img src="/img/JDHS_Square.jpg" width="100%" height="auto" style="border-radius:50%;" />
+          <section class="mycols" style="padding-top: 2em;">
+            <img src="/img/JDHS_Square.jpg" width="100%" height="auto" style="border-radius: 50%;" />
             <p style="font-size: 14px; line-height: 1.5em; margin-top: 0; padding: 1em 0 1em 0;">Jeanna Dwyer is a
               children’s book author. She is married with two kids and works as a pediatric physical therapist. Her son
               inspired her to write her debut story, A Penguin in the Closet.</p>
@@ -284,27 +290,39 @@
 
     <footer id="footer" class="container-fluid footer-expand-lg fixed-bottom">
       <div class="col-sm-2">
-        <p>Footer</p>
+        <div class="rounded-circle" style="height: 4vh;">
+          <img src="/img/LakeTime_Logo.svg" alt="LakeTime Logo" height="100%" width="auto">
+          <p style="font-size: .25em;">&copy;LakeTime Publishing 2020</p>
+        </div>
       </div>
       <div class="col-sm-2">
-        <p>Footer</p>
+        <div style="padding: 1em;">
+          <img src="/img/envelope-regular.svg" alt="Envelope icon link to Jeanna's email" height="32px" width="auto">
+        </div>
       </div>
       <div class="col-sm-2">
-        <p>Footer</p>
+        <div style="padding: 1em;">
+          <img src="/img/shopping-cart-solid.svg" alt="Shopping cart icon link to Amazon" height="32px" width="auto">
+        </div>
       </div>
       <div class="col-sm-2">
-        <p>Footer</p>
+        <img src="/img/Facebook.svg" alt="Facebook Icon Link" height="60px" width="auto">
       </div>
       <div class="col-sm-2">
-        <p>Footer</p>
+        <img src="/img/Instagram.svg" alt="Instagram Icon Link" height="60px" width="auto">
       </div>
       <div class="col-sm-2">
-        <p>Footer</p>
+        <ul style="list-style: none; padding: .5em 0;">
+          <li style="font-size: .25em; text-decoration: none;">Home</li>
+          <li style="font-size: .25em; text-decoration: none;">About</li>
+          <li style="font-size: .25em; text-decoration: none;">Contact</li>
+        </ul>
       </div>
     </footer>
   </div>
+
   <!-- Script Files Start Here -->
-  <!-- <script src="https://kit.fontawesome.com/cf650dccb0.js" crossorigin="anonymous"></script> -->
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>

@@ -12,18 +12,22 @@ body {
     width: 100vw;
     font-family: 'Montserrat', sans-serif;
     // background-color: #0D76BA;
+    background-image: url('/img/BlueWave3.svg');
+    background-repeat: repeat-y;
+    background-size: cover;
     align-items: center;
+    
     
 }
 
-  #contentWrapper {
+#contentWrapper {
     // width: 100vw;
     height: 100vh;
     max-width: 1500px;
-    background-image: url("/img/BlueWave3.svg");
-    background-repeat: repeat;
-    background-size: cover;
-  } 
+    // background-image: url("/img/BlueWave3.svg");
+    // background-repeat: repeat;
+    // background-size: cover;
+} 
 
 
 // ------ Google Fonts -------
@@ -32,12 +36,13 @@ body {
 
 // -------- Navigation -------- //
 nav {
-    background-color: #00ADEF;
+    background-color: #0D76BA;
     // position: absolute;
     // margin-top: 0;
     padding-top: 0px;
     height: 11vh;
     max-width: 1500px;
+    
 }
 
 // .navbar {
@@ -69,7 +74,7 @@ nav {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    border: 2px solid #00ADEF;
+    border: 2px solid#0D76BA;
     border-radius: 10px;
     padding: 10px 0px 10px 0px;
     width: 100%;
@@ -102,67 +107,57 @@ nav {
 
 #navbarSupportedContent {
     text-align: center;
+    width: 30%;
+    // height: 100vh;
     
-
 }
 
-// ul.navbar-nav.ml-auto.align-items-end {
-//     background: url('/img/NavCircle.svg');
-//     background-size: cover;
-//     background-position: right;
-//     background-repeat: no-repeat;
-//     align-items: flex-end;
-//     margin-top: 0vh;
-//     height: 100%;
-// } //
-
 a.nav-link {
-    border: 2px solid #00ADEF;
+    border: 2px solid #0D76BA;
     border-radius: 10px;
     padding: 10px 0px 10px 0px;
     width: 100%;
+    height: 100%;
+    font-size: 1.25em;
     margin-right: 1vw;
     align-items: center;
-    margin-right: 1vw;
     margin-bottom: 0px;
   
 }
 
-div#navcircle {
+#navcircle {
     height: 100%;
-    margin-top: 0;
+    position: relative;
     padding: 0;
-    // background-color: #00adef;
-    background-color: red;
-    clip-path: circle(10% at 88% 10%);
+    margin: 0;
+    background-color: #0D76BA;
+    // clip-path: circle(90% at 110% 50%);
+    // z-index: 10;
+    
     
 }
 
 ul.navbar-nav.ml-auto.align-items-end {
-    // background: url('/img/NavCircle.svg');
-    // background-size: cover;
-    // background-position: right;
-    // background-repeat: no-repeat;
-    // align-items: flex-end;
     margin-top: 0;
-    height: 30vh;
-    padding: 24px 0px;
-    // height: 100vh;
+    padding: 0;
+    // z-index: 10;
+    height: 100%;
+    width: auto;
     // background-color: red;
 } 
 
 .navbar-collapse .show {
-    // margin-right: 0;
+    margin: 0;
     align-items: flex-end;
-    background-color: red;
-    height: 12vh;
-    z-index: 10;
-    // clip-path: circle(100% at 70% 10%);
+    font-size: inherit;
+    height: 100vh;
+    // z-index: 10;
+    
 
 }
 
 .collapsing {
-    transition: all .5s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 
@@ -204,15 +199,17 @@ ul.navbar-nav.ml-auto.align-items-end {
 .col-md-3 {
     height: 81vh;
     margin-top: 0;
-    padding: 2.5vh;
+    padding: 0 3em 0 0;
     background-color: transparent;
-    overflow: hidden;
+    overflow: scroll;
 
 }
 
 #fixedColumn1 {
     position: sticky;
+    height: 81vh;
     z-index: 1;
+    overflow: hidden;
 
 }
 
@@ -255,13 +252,13 @@ ul.navbar-nav.ml-auto.align-items-end {
     color: #545554;
 }
 
-// .card-text {
-//     color: #545554;
-//     padding-top: 0;
-//     margin-bottom: 0;
-//     max-width: 725px;
-//     overflow: hidden;
-// }
+.card-text {
+    color: #545554;
+    padding-top: 0;
+    margin-bottom: 0;
+    max-width: 725px;
+    overflow: hidden;
+}
 
 //----- BUTTONS ------//
 
@@ -339,15 +336,15 @@ h5 {
 
 section {
     max-height: 881px;
-    @include float-right;
-    @include float-left;
-    @include float-none;
+    // @include float-right;
+    // @include float-left;
+    // @include float-none;
 }
 
 //----- CAROUSEL ----- //
 
 #carouselExampleIndicators {
-    @include float-right;
+    // @include float-right;
     width: 40%; 
     margin-right: -50%;
 }
@@ -377,14 +374,21 @@ span.carousel-control-prev-icon {
     max-width: 1500px;
 }
 
-@include media-breakpoint-down(md) {
+.far .fa-envelope {
+    height: 60px; 
+    width: 60px;
+}
+
+//----- MEDIA QUERY -------//
+
+@media (min-width: 320px) and (max-width: 768px) {
 
     .navbar-brand {
         font-size: 2em;
     }
 
     a.nav-link {
-        font-size: 2em;
+        font-size: 1.25em;
     }
 
     div.col-md-6 {
