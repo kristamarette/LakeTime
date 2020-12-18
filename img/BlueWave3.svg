@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1502.1 1447.2" style="enable-background:new 0 0 1502.1 1447.2;" xml:space="preserve">
+	 viewBox="0 0 1502.1 1440" style="enable-background:new 0 0 1502.1 1440;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#0D76BA;}
-	.st1{fill:#00ADEF;}
+	.st0{fill:#2CABE2;}
 </style>
-<rect x="0" class="st0" width="1501.3" height="603"/>
-<rect x="0" y="844.2" class="st1" width="1501.3" height="603"/>
 <g>
-	<path id="Path_208" class="st1" d="M1501.1,40.7C750.6,194.3,750.6-94.5,0,39.1c0,509.4-0.3,628.1,0.8,683.1
-		c728.4-130.8,749.8,146.7,1500.4,9.2C1501.3,686.5,1501.1,40.7,1501.1,40.7z"/>
-	<path id="Path_208_1_" class="st0" d="M1502,723.8C751.5,877.4,751.5,588.5,0.8,722.1c0,509.4-0.3,628.1,0.8,683.1
-		c749.5-191,749.8,143.6,1500.4,9.2C1502.1,1369.6,1502,723.8,1502,723.8z"/>
+	<path class="st0" d="M1518.5,981.7l-0.6,73.3c-823,110-778-188.8-1534.3-18.2c0.6-55.1,0.6-55.1,0.6-55.1h0.6c0,0-2.6-172,0-596.7
+		c821.7-110,776.9,188.8,1532,18.2v578.5H1518.5z"/>
 </g>
 </svg>
